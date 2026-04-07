@@ -190,6 +190,9 @@
   .gallery {
     padding: 70px 60px;
   }
+  .teacher-card,.topper-card{
+    width: 18%;
+  }
 
   /* Gallery */
   .gallery-grid {
@@ -495,8 +498,8 @@
   }
 
   .teacher-card {
-    flex: 0 0 calc(50% - 7px);
-    padding: 22px 16px;
+    width: 32%;
+    padding: 22px 10px;
   }
 
   .teacher-card img {
@@ -531,12 +534,12 @@
   }
 
   .topper-cards {
-    justify-content: center;
+    justify-content: left;
     gap: 16px;
   }
 
   .topper-card {
-    width: calc(50% - 8px);
+    width: 31%;
     min-width: 170px;
     padding: 24px 16px 20px;
   }
@@ -562,24 +565,24 @@
   .gallery {
     padding: 60px 32px;
   }
-.gallery-grid {
-  display: grid !important;
-  grid-template-columns: repeat(2, 1fr) !important;
-  gap: 10px;
-}
+  .gallery-grid {
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 10px;
+  }
 
-.gallery-item {
-  width: 100% !important;
-  height: 200px; /* force visible size */
-  overflow: hidden;
-}
+  .gallery-item {
+    width: 100% !important;
+    height: 100%; /* force visible size */
+    overflow: hidden;
+  }
 
-.gallery-item img {
-  width: 100% !important;
-  height: 100% !important;
-  object-fit: cover;
-  display: block;
-}
+  .gallery-item img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover;
+    display: block;
+  }
   .gallery-group-title {
     font-size: 20px;
     margin-bottom: 18px;
@@ -753,7 +756,7 @@
   }
 
   .teacher-card {
-    width: 100%;
+    width: 48%;
     max-width: 280px;
   }
 
@@ -763,7 +766,7 @@
   }
 
   .topper-card {
-    width: 100%;
+    width: 45%;
     max-width: 260px;
   }
 
@@ -773,7 +776,7 @@
   }
 
   .gallery-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(3, 1fr);
   }
 
   /* Contact */
@@ -1117,10 +1120,13 @@
   }
 
   .gallery-grid {
-    gap: 8px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 14px;
   }
 
   .gallery-item {
+    width: 100%;
     border-radius: var(--r-sm);
   }
 

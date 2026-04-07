@@ -1069,7 +1069,8 @@ body {
   position: relative;
   overflow: hidden;
   cursor: default;
-}
+  background: linear-gradient(135deg, #fff7e6, #f5dba5);
+  border: 1px solid rgba(200,150,60,0.2);}
 .topper-card::before {
   content: "";
   position: absolute;
@@ -1128,6 +1129,8 @@ body {
   border-radius: var(--r-sm);
   padding: 10px 0;
   margin-bottom: 0;
+   background: linear-gradient(135deg, #fff7e6, #f5dba5);
+  border: 1px solid rgba(200,150,60,0.2);
 }
 .topper-card .marks span {
   font-family: var(--font-disp);
@@ -1138,25 +1141,6 @@ body {
   line-height: 1;
 }
 
-/* Rank variants */
-.rank-1 {
-  border-color: rgba(200, 150, 60, 0.35);
-}
-.rank-1::before {
-  background: linear-gradient(90deg, #c9a84c, #e8c96a);
-}
-.rank-1 .marks {
-  background: rgba(200, 150, 60, 0.08);
-}
-.rank-1 .marks span {
-  color: #8a6b1f;
-}
-.rank-2::before {
-  background: linear-gradient(90deg, #94a3b8, #cbd5e1);
-}
-.rank-3::before {
-  background: linear-gradient(90deg, #c9714c, #e8a06a);
-}
 
 /* ── GALLERY ──────────────────────────────────────────────── */
 .gallery {
@@ -1423,7 +1407,14 @@ body {
 .cc-link:hover {
   color: var(--gold);
 }
-
+.map-wrap{
+  width: 100%;
+  margin-top: 50px;
+}
+.map-wrap iframe{
+  width: 100%;
+  
+}
 /* ── FOOTER ───────────────────────────────────────────────── */
 .footer {
   background: #000c1a;
